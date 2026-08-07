@@ -1,1 +1,429 @@
+/* ==========================================================================
+   METALLICA FAN PORTAL - STYLESHEET
+   Aesthetic: Heavy Dark, Neon Gold Accent, Glassmorphism, Modern Layout
+   ========================================================================== */
 
+:root {
+    --bg-main: #0a0a0c;
+    --bg-card: #141419;
+    --bg-alt: #0f0f13;
+    --accent-gold: #ffcc00;
+    --accent-red: #e60000;
+    --text-primary: #ffffff;
+    --text-muted: #a0a0ab;
+    --border-color: rgba(255, 204, 0, 0.2);
+    --font-heading: 'Cinzel', serif;
+    --font-body: 'Montserrat', sans-serif;
+    --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+/* Reset Global */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-main);
+    color: var(--text-primary);
+    font-family: var(--font-body);
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-main);
+}
+::-webkit-scrollbar-thumb {
+    background: var(--accent-gold);
+    border-radius: 5px;
+}
+
+/* Header & Nav */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background: rgba(10, 10, 12, 0.9);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.logo {
+    font-family: var(--font-heading);
+    font-size: 2rem;
+    font-weight: 900;
+    letter-spacing: 4px;
+    color: var(--text-primary);
+}
+
+.logo span {
+    color: var(--accent-gold);
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: var(--transition);
+}
+
+nav a:hover {
+    color: var(--accent-gold);
+}
+
+.btn-nav {
+    border: 1px solid var(--accent-gold);
+    padding: 0.5rem 1.2rem;
+    border-radius: 4px;
+    color: var(--accent-gold) !important;
+}
+
+.btn-nav:hover {
+    background: var(--accent-gold);
+    color: #000 !important;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    background: linear-gradient(135deg, #111116 0%, #050507 100%);
+    padding: 0 1rem;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0; left: 0; width: 100%; height: 100%;
+    background: radial-gradient(circle, rgba(255,204,0,0.05) 0%, rgba(0,0,0,0.8) 100%);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+}
+
+.hero h1 {
+    font-family: var(--font-heading);
+    font-size: 4rem;
+    letter-spacing: 6px;
+    margin: 1rem 0;
+    text-shadow: 0 0 20px rgba(255, 204, 0, 0.3);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: var(--text-muted);
+    margin-bottom: 2rem;
+}
+
+.badge {
+    background: rgba(255, 204, 0, 0.1);
+    color: var(--accent-gold);
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 1px solid var(--border-color);
+}
+
+/* Botões */
+.btn {
+    display: inline-block;
+    padding: 0.9rem 2rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+.btn-primary {
+    background: var(--accent-gold);
+    color: #000;
+}
+
+.btn-primary:hover {
+    background: #ffe066;
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(255, 204, 0, 0.2);
+}
+
+.btn-secondary {
+    border: 1px solid #fff;
+    color: #fff;
+    margin-left: 1rem;
+}
+
+.btn-secondary:hover {
+    background: #fff;
+    color: #000;
+    transform: translateY(-3px);
+}
+
+/* Stats Bar */
+.stats-bar {
+    display: flex;
+    justify-content: space-around;
+    padding: 3rem 5%;
+    background: var(--bg-card);
+    border-top: 1px solid var(--border-color);
+    border-bottom: 1px solid var(--border-color);
+    text-align: center;
+}
+
+.stat-item h3 {
+    font-size: 2.5rem;
+    color: var(--accent-gold);
+    font-family: var(--font-heading);
+}
+
+.stat-item p {
+    color: var(--text-muted);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+/* Layout Geral das Seções */
+.section {
+    padding: 6rem 8%;
+}
+
+.bg-alt {
+    background-color: var(--bg-alt);
+}
+
+.section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 4rem;
+    position: relative;
+    letter-spacing: 2px;
+}
+
+.section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background: var(--accent-gold);
+    margin: 1rem auto 0 auto;
+}
+
+/* Linha do Tempo (Timeline) */
+.timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    background: var(--border-color);
+    top: 0; bottom: 0; left: 50%;
+    margin-left: -1px;
+}
+
+.timeline-item {
+    padding: 10px 40px;
+    position: relative;
+    width: 50%;
+}
+
+.timeline-item.left { left: 0; text-align: right; }
+.timeline-item.right { left: 50%; text-align: left; }
+
+.timeline-item .content {
+    padding: 1.5rem;
+    background: var(--bg-card);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.timeline-item .year {
+    color: var(--accent-gold);
+    font-weight: 900;
+    font-size: 1.2rem;
+}
+
+/* Grids e Cards (Discografia e Membros) */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+.card {
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    transition: var(--transition);
+    position: relative;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    border-color: var(--accent-gold);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+}
+
+.card-tag {
+    color: var(--accent-gold);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.card h3 { margin-bottom: 1rem; }
+.card p { color: var(--text-muted); font-size: 0.9rem; margin-bottom: 1.5rem; }
+
+.card-link {
+    color: var(--accent-gold);
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.member-card {
+    background: linear-gradient(180deg, rgba(20,20,25,0.6) 0%, rgba(20,20,25,1) 100%);
+    border: 1px solid rgba(255,255,255,0.05);
+    border-radius: 8px;
+    padding: 2.5rem 1.5rem;
+    text-align: center;
+    transition: var(--transition);
+}
+
+.member-card:hover {
+    border-color: var(--accent-gold);
+}
+
+.member-info .role {
+    display: block;
+    color: var(--accent-gold);
+    font-size: 0.85rem;
+    margin: 0.5rem 0 1rem 0;
+    font-weight: 700;
+}
+
+/* Tabela de Turnê */
+.table-container { overflow-x: auto; }
+
+.tour-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--bg-card);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.tour-table th, .tour-table td {
+    padding: 1.2rem 1.5rem;
+    text-align: left;
+}
+
+.tour-table th {
+    background: rgba(255, 204, 0, 0.1);
+    color: var(--accent-gold);
+    text-transform: uppercase;
+    font-size: 0.85rem;
+}
+
+.tour-table tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.badge-soldout { background: rgba(230, 0, 0, 0.2); color: var(--accent-red); border: 1px solid var(--accent-red); }
+.badge-available { background: rgba(0, 230, 115, 0.2); color: #00e673; border: 1px solid #00e673; }
+
+/* Player Box */
+.player-box {
+    max-width: 600px;
+    margin: 0 auto;
+    background: var(--bg-card);
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.4);
+}
+
+.track-info { display: flex; align-items: center; gap: 1.5rem; margin-bottom: 1.5rem; }
+.disc-art { font-size: 2.5rem; background: rgba(255,204,0,0.1); width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; border-radius: 50%; }
+
+.player-controls { display: flex; justify-content: center; gap: 1rem; margin-bottom: 1.5rem; }
+.btn-player { background: none; border: 1px solid var(--text-muted); color: #fff; width: 45px; height: 45px; border-radius: 50%; cursor: pointer; transition: var(--transition); }
+.btn-player:hover { border-color: var(--accent-gold); color: var(--accent-gold); }
+.btn-play { background: var(--accent-gold); color: #000; border: none; font-weight: bold; }
+
+.progress-bar-container { background: rgba(255,255,255,0.1); height: 6px; border-radius: 3px; overflow: hidden; }
+.progress-bar { width: 45%; height: 100%; background: var(--accent-gold); }
+
+/* Club Section */
+.club-section {
+    text-align: center;
+    background: linear-gradient(180deg, var(--bg-main) 0%, #1a1500 100%);
+}
+
+.club-content { max-width: 600px; margin: 0 auto; }
+.club-content h2 { font-family: var(--font-heading); font-size: 2.2rem; margin-bottom: 1rem; }
+.club-content p { color: var(--text-muted); margin-bottom: 2rem; }
+
+.club-form { display: flex; gap: 0.5rem; }
+.club-form input { flex: 1; padding: 0.9rem 1rem; border-radius: 4px; border: 1px solid var(--border-color); background: #000; color: #fff; }
+.club-form input:focus { outline: none; border-color: var(--accent-gold); }
+
+/* Footer */
+.footer {
+    padding: 2rem 5%;
+    background: #050507;
+    border-top: 1px solid rgba(255,255,255,0.05);
+    text-align: center;
+}
+
+.footer-content { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 1rem; }
+.footer p { color: var(--text-muted); font-size: 0.85rem; }
+.socials a { color: var(--accent-gold); text-decoration: none; margin-left: 1.5rem; font-weight: 700; font-size: 0.85rem; }
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .navbar { flex-direction: column; gap: 1rem; }
+    nav ul { flex-wrap: wrap; justify-content: center; gap: 1rem; }
+    .hero h1 { font-size: 2.5rem; }
+    .timeline::after { left: 31px; }
+    .timeline-item { width: 100%; padding-left: 70px; padding-right: 25px; }
+    .timeline-item.right { left: 0%; }
+    .timeline-item.left { text-align: left; }
+    .stats-bar { flex-direction: column; gap: 1.5rem; }
+    .club-form { flex-direction: column; }
+    .footer-content { flex-direction: column; }
+}
