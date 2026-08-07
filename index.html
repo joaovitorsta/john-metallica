@@ -3,263 +3,259 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>METALLICA // Official Fan World</title>
-    <link rel="stylesheet" href="style.css">
+    <meta name="description" content="O maior portal definitivo sobre o Metallica. História detalhada, discografia faixa a faixa, turnês, equipamentos e clube de fãs.">
+    <meta name="keywords" content="Metallica, Thrash Metal, James Hetfield, Lars Ulrich, Kirk Hammett, Robert Trujillo, Cliff Burton, Kill Em All, Master of Puppets, Heavy Metal">
+    <title>METALLICA // The Ultimate Thrash Metal Sanctuary</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Montserrat:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700;900&family=Fira+Code:wght@400;700&family=Montserrat:ital,wght@0,300;0,400;0,600;0,800;0,900;1,400&family=Metal+Mania&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header class="navbar">
-        <div class="logo">METALLIC<span>A</span></div>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#history">História</a></li>
-                <li><a href="#discography">Discografia</a></li>
-                <li><a href="#members">Membros</a></li>
-                <li><a href="#tour">Turnê M72</a></li>
-                <li><a href="#player">Player</a></li>
-                <li><a href="#club" class="btn-nav">Fifth Member</a></li>
-            </ul>
-        </nav>
+    <div class="top-announcement">
+        <div class="ticker-wrapper">
+            <div class="ticker-content">
+                <span>🔥 M72 WORLD TOUR - NO REPEAT WEEKENDS EM ANDAMENTO</span>
+                <span>⚡ ALBUM "72 SEASONS" DISPONÍVEL EM VINIL DUPLO DOURADO</span>
+                <span>🎸 CONFIRA A HISTÓRIA DETALHADA E TODAS AS FAIXAS DOS ÁLBUNS</span>
+                <span>💥 JUNTE-SE AO FIFTH MEMBER PARA CONTEÚDOS EXCLUSIVOS DA BANDA</span>
+            </div>
+        </div>
+    </div>
+
+    <header class="main-header" id="main-header">
+        <div class="header-container">
+            <a href="#hero" class="brand-logo">
+                <span class="logo-text">METALLIC<span class="lightning-a">A</span></span>
+                <span class="logo-subtext">FAN SANCTUARY</span>
+            </a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#hero" class="nav-link active">Início</a></li>
+                    <li class="nav-item dropdown">
+                        <a href="#history" class="nav-link">História <span class="arrow">▼</span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#era-1981">1981-1983: Os Anos de Sangue & Thrash</a></li>
+                            <li><a href="#era-1984">1984-1988: A Era de Ouro e Tragédia</a></li>
+                            <li><a href="#era-1991">1991-2000: Domínio Mundial & Reinvenção</a></li>
+                            <li><a href="#era-2001">2001-Presente: Redenção & Imortalidade</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"><a href="#discography" class="nav-link">Discografia</a></li>
+                    <li class="nav-item"><a href="#members" class="nav-link">Membros</a></li>
+                    <li class="nav-item"><a href="#tour" class="nav-link">M72 Tour</a></li>
+                    <li class="nav-item"><a href="#vault" class="nav-link">O Baú</a></li>
+                </ul>
+            </nav>
+
+            <div class="header-actions">
+                <a href="#club" class="btn-fifth-member">
+                    <span class="btn-icon">⚡</span> FIFTH MEMBER
+                </a>
+            </div>
+        </div>
     </header>
 
-    <section id="home" class="hero">
-        <div class="hero-overlay"></div>
+    <section class="hero-section" id="hero">
+        <div class="hero-bg-overlay"></div>
+        <div class="hero-particles" id="particles-js"></div>
+        
         <div class="hero-content">
-            <span class="badge">WorldWired & M72 Era</span>
-            <h1>MASTER OF PUPPETS</h1>
-            <p>Mais de quatro décadas de puro Thrash Metal. Sinta a energia, o peso e a história da maior banda de metal do planeta.</p>
-            <div class="hero-buttons">
-                <a href="#tour" class="btn btn-primary">Ver Datas de Shows</a>
-                <a href="#discography" class="btn btn-secondary">Explorar Álbuns</a>
+            <div class="hero-badge">
+                <span class="pulse-dot"></span>
+                <span>40+ Anos de Destruição Sonora</span>
             </div>
-        </div>
-    </section>
+            
+            <h1 class="hero-title">
+                <span class="glitch-text" data-text="MASTER OF">MASTER OF</span>
+                <span class="hero-accent">PUPPETS</span>
+            </h1>
+            
+            <p class="hero-description">
+                Bem-vindo ao acervo mais completo sobre a maior e mais influente banda de Heavy Metal do planeta Earth. Uma jornada imersiva por riffs devastadores, tragédias lendárias e hinos imortais.
+            </p>
 
-    <section class="stats-bar">
-        <div class="stat-item">
-            <h3>40+</h3>
-            <p>Anos de Estrada</p>
-        </div>
-        <div class="stat-item">
-            <h3>12</h3>
-            <p>Álbuns de Estúdio</p>
-        </div>
-        <div class="stat-item">
-            <h3>125M+</h3>
-            <p>Cópias Vendidas</p>
-        </div>
-        <div class="stat-item">
-            <h3>9</h3>
-            <p>Grammy Awards</p>
-        </div>
-    </section>
+            <div class="hero-cta-group">
+                <a href="#era-1981" class="btn-primary-metal">
+                    <span class="btn-text">Iniciar Cronologia</span>
+                    <span class="btn-glow"></span>
+                </a>
+                <a href="#discography" class="btn-secondary-metal">
+                    Explorar Álbuns
+                </a>
+            </div>
 
-    <section id="history" class="section history-section">
-        <h2 class="section-title">A Sagrada Trajetória</h2>
-        <div class="timeline">
-            <div class="timeline-item left">
-                <div class="content">
-                    <span class="year">1981</span>
-                    <h3>A Origem em LA</h3>
-                    <p>Lars Ulrich coloca um anúncio no jornal Recycler. James Hetfield responde, e o germe do Thrash Metal é plantado.</p>
+            <div class="hero-stats-grid">
+                <div class="stat-card">
+                    <span class="stat-number" data-target="125">125M+</span>
+                    <span class="stat-label">Álbuns Vendidos</span>
                 </div>
-            </div>
-            <div class="timeline-item right">
-                <div class="content">
-                    <span class="year">1983</span>
-                    <h3>Kill 'Em All</h3>
-                    <p>Lançamento do álbum de estreia revolucionário que definiu a velocidade e a agressividade do Thrash Metal americano.</p>
+                <div class="stat-card">
+                    <span class="stat-number">12</span>
+                    <span class="stat-label">Álbuns de Estúdio</span>
                 </div>
-            </div>
-            <div class="timeline-item left">
-                <div class="content">
-                    <span class="year">1986</span>
-                    <h3>Master of Puppets & Tragédia</h3>
-                    <p>O divisor de águas da música pesada. No mesmo ano, a trágica perda do lendário baixista Cliff Burton em um acidente na Suécia.</p>
+                <div class="stat-card">
+                    <span class="stat-number">9</span>
+                    <span class="stat-label">Grammy Awards</span>
                 </div>
-            </div>
-            <div class="timeline-item right">
-                <div class="content">
-                    <span class="year">1991</span>
-                    <h3>The Black Album</h3>
-                    <p>O álbum autointitulado domina o mundo com sucessos como 'Enter Sandman' e 'Nothing Else Matters', tornando-se um marco comercial.</p>
-                </div>
-            </div>
-            <div class="timeline-item left">
-                <div class="content">
-                    <span class="year">2023</span>
-                    <h3>72 Seasons & M72 Tour</h3>
-                    <p>O lançamento do 12º álbum acompanhado da épica turnê de palco circular com dois shows por cidade sem repetição de setlist.</p>
+                <div class="stat-card">
+                    <span class="stat-number">7</span>
+                    <span class="stat-label">Continentes Tocados</span>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="discography" class="section bg-alt">
-        <h2 class="section-title">Discografia Essencial</h2>
-        <div class="grid-container">
-            <div class="card album-card">
-                <div class="card-tag">1983</div>
-                <h3>Kill 'Em All</h3>
-                <p><strong>Destaques:</strong> Seek & Destroy, Hit the Lights, Whiplash</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-            <div class="card album-card">
-                <div class="card-tag">1984</div>
-                <h3>Ride the Lightning</h3>
-                <p><strong>Destaques:</strong> Fade to Black, Creeping Death, For Whom the Bell Tolls</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-            <div class="card album-card">
-                <div class="card-tag">1986</div>
-                <h3>Master of Puppets</h3>
-                <p><strong>Destaques:</strong> Master of Puppets, Battery, Welcome Home (Sanitarium)</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-            <div class="card album-card">
-                <div class="card-tag">1988</div>
-                <h3>...And Justice for All</h3>
-                <p><strong>Destaques:</strong> One, Blackened, Harvester of Sorrow</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-            <div class="card album-card">
-                <div class="card-tag">1991</div>
-                <h3>Metallica (The Black Album)</h3>
-                <p><strong>Destaques:</strong> Enter Sandman, Sad But True, Nothing Else Matters</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-            <div class="card album-card">
-                <div class="card-tag">2023</div>
-                <h3>72 Seasons</h3>
-                <p><strong>Destaques:</strong> Lux Æterna, 72 Seasons, Inamorata</p>
-                <a href="#" class="card-link">Ouvir Faixas →</a>
-            </div>
-        </div>
-    </section>
+    <main class="main-content">
 
-    <section id="members" class="section">
-        <h2 class="section-title">Os Mestres do Riff</h2>
-        <div class="grid-container members-grid">
-            <div class="member-card">
-                <div class="member-info">
-                    <h3>James Hetfield</h3>
-                    <span class="role">Voz Principal & Guitarra Base</span>
-                    <p>O motor rítmico implacável da banda e a voz inconfundível do metal moderno.</p>
+        <section class="history-chapter" id="era-1981">
+            <div class="chapter-header">
+                <span class="chapter-number">CAPÍTULO 01</span>
+                <h2 class="chapter-title">1981 - 1983: Fogo, Velocidade e Álcool</h2>
+                <p class="chapter-subtitle">O nascimento do Thrash Metal nas garagens da Califórnia e o álbum que mudou a história do som pesado.</p>
+            </div>
+
+            <div class="chapter-content-grid">
+                <div class="history-text-block">
+                    <h3>O Anúncio no Recycler e a Conexão Lars & James</h3>
+                    <p>
+                        A história do Metallica começou na primavera de 1981 em Los Angeles, Califórnia, quando o baterista dinamarquês <strong>Lars Ulrich</strong> colocou um anúncio no jornal classificado local <em>The Recycler</em>. O anúncio dizia simplesmente: <em>"Baterista à procura de outros músicos de metal para jam com Tygers of Pan Tang, Diamond Head e Iron Maiden."</em>
+                    </p>
+                    <p>
+                        O guitarrista e vocalista <strong>James Hetfield</strong>, um jovem tímido criado sob rigorosas doutrinas da Ciência Cristã, respondeu ao anúncio. A primeira jam session não foi impressionante — Lars tinha um kit de bateria surrado e os pratos caíam constantemente. No entanto, Lars viajou para a Europa no verão e assistiu à turnê da banda da NWOBHM Diamond Head. Ao retornar, determinado a criar uma banda, conseguiu uma vaga na coletânea de vinil <em>Metal Massacre I</em> organizada por seu amigo Brian Slagel.
+                    </p>
+
+                    <div class="quote-box">
+                        <blockquote>
+                            "Nós só queríamos tocar o som mais rápido, pesado e barulhento possível. O rádio nos odiava, os clubes nos odiavam, mas os garotos nas garagens nos entendiam."
+                        </blockquote>
+                        <cite>— James Hetfield</cite>
+                    </div>
+
+                    <h3>A Era Dave Mustaine e a Chegada de Cliff Burton</h3>
+                    <p>
+                        Para completar a formação inicial, recrutaram o guitarrista solo <strong>Dave Mustaine</strong>, um prodígio técnico com um temperamento explosivo e um estilo de tocar perigosamente rápido. Com Ron McGovney no baixo, a banda começou a ganhar reputação por sua velocidade insana e shows caóticos, apelidados de "Alcoholica" pelo consumo desenfreado de bebidas.
+                    </p>
+                    <p>
+                        Procurando um baixista mais técnico e virtuoso, James e Lars foram ao clube <em>Whisky a Go Go</em> no final de 1982 e viram a banda <em>Trauma</em>. Eles ficaram boquiabertos com o solo de baixo com pedal wah-wah tocado por <strong>Cliff Burton</strong>. Impressionados, declararam que Cliff era o baixista dos seus sonhos. Burton aceitou entrar na banda sob uma condição inegociável: o Metallica teria que se mudar de Los Angeles para San Francisco.
+                    </p>
+                </div>
+
+                <div class="era-sidebar-card">
+                    <div class="card-inner">
+                        <div class="card-tag">ALBUM DE ESTREIA</div>
+                        <div class="album-art-placeholder">
+                            <div class="album-icon">🔨</div>
+                            <h4>KILL 'EM ALL</h4>
+                            <span>Lançado em: 25 de Julho de 1983</span>
+                        </div>
+                        <ul class="era-quick-facts">
+                            <li><strong>Gravadora:</strong> Megaforce Records</li>
+                            <li><strong>Produtor:</strong> Paul Curcio</li>
+                            <li><strong>Estúdio:</strong> Music America Studios (NY)</li>
+                            <li><strong>Título Original:</strong> Metal Up Your Ass</li>
+                            <li><strong>Vendas Globais:</strong> 4.5+ Milhões</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div class="member-card">
-                <div class="member-info">
-                    <h3>Lars Ulrich</h3>
-                    <span class="role">Bateria & Co-fundador</span>
-                    <p>A força criativa, estrategista e a energia contagiante por trás de cada batida.</p>
+
+            <div class="album-deep-dive">
+                <h3 class="sub-section-title">Análise Técnica Faixa a Faixa: Kill 'Em All (1983)</h3>
+                
+                <div class="tracklist-table-wrapper">
+                    <table class="track-table">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Título da Faixa</th>
+                                <th>Duração</th>
+                                <th>Compositores Principal</th>
+                                <th>Análise & Curiosidades Técnicas</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="track-num">01</td>
+                                <td class="track-title">Hit the Lights</td>
+                                <td>4:16</td>
+                                <td>Hetfield, Ulrich</td>
+                                <td>A primeira música gravada da banda. Riffs em palhetada dupla ultra veloz e letra sobre a energia pura de estar no palco.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">02</td>
+                                <td class="track-title">The Four Horsemen</td>
+                                <td>7:13</td>
+                                <td>Hetfield, Ulrich, Mustaine</td>
+                                <td>Originalmente chamada "Mechanix" por Dave Mustaine. James alterou as letras para focar nos Quatro Cavaleiros do Apocalipse e adicionou uma seção lenta intermediária.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">03</td>
+                                <td class="track-title">Motorbreath</td>
+                                <td>3:08</td>
+                                <td>Hetfield</td>
+                                <td>A única música do Metallica creditada unicamente a James Hetfield. Ritmo punk/thrash acelerado sobre viver a vida no limite.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">04</td>
+                                <td class="track-title">Jump in the Fire</td>
+                                <td>4:41</td>
+                                <td>Hetfield, Ulrich, Mustaine</td>
+                                <td>Um dos primeiros Riffs criados por Mustaine. Letra escrita sob a perspectiva do Diabo atraindo pessoas para o inferno.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">05</td>
+                                <td class="track-title">(Anesthesia) – Pulling Teeth</td>
+                                <td>4:15</td>
+                                <td>Burton</td>
+                                <td>O lendário solo instrumental de baixo elétrico com efeito Distortion e Wah-wah de Cliff Burton, com acompanhamento de bateria no final.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">06</td>
+                                <td class="track-title">Whiplash</td>
+                                <td>4:10</td>
+                                <td>Hetfield, Ulrich</td>
+                                <td>O primeiro single oficial. Considerada por Kurt Cobain e multidões como a essência definitiva do Thrash Metal inicial.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">07</td>
+                                <td class="track-title">Phantom Lord</td>
+                                <td>5:01</td>
+                                <td>Hetfield, Ulrich, Mustaine</td>
+                                <td>Contém o primeiro trecho de guitarra limpa/violão na discografia da banda, criando um contraste dramático com os riffs pesados.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">08</td>
+                                <td class="track-title">No Remorse</td>
+                                <td>6:26</td>
+                                <td>Hetfield, Ulrich</td>
+                                <td>Mudanças constantes de tempo e ritmo sobre a insensibilidade da guerra. Solos rápidos e trocas de base marcantes.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">09</td>
+                                <td class="track-title">Seek & Destroy</td>
+                                <td>6:55</td>
+                                <td>Hetfield, Ulrich</td>
+                                <td>O hino ao vivo imortal do Metallica. Tocada em quase todos os shows da história da banda desde sua criação.</td>
+                            </tr>
+                            <tr>
+                                <td class="track-num">10</td>
+                                <td class="track-title">Metal Militia</td>
+                                <td>5:10</td>
+                                <td>Hetfield, Ulrich, Mustaine</td>
+                                <td>A faixa mais rápida e agressiva do disco, encerramento com sons simulados de marcha de exército e tiros.</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
             </div>
-            <div class="member-card">
-                <div class="member-info">
-                    <h3>Kirk Hammett</h3>
-                    <span class="role">Guitarra Solo & Wah-Wah</span>
-                    <p>Mestre dos solos velozes e marcantes que definiram os maiores clássicos do estilo.</p>
-                </div>
-            </div>
-            <div class="member-card">
-                <div class="member-info">
-                    <h3>Robert Trujillo</h3>
-                    <span class="role">Baixo & Backing Vocals</span>
-                    <p>Sua pegada insana com os dedos trouxe um peso devastador para o palco desde 2003.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="tour" class="section bg-alt">
-        <h2 class="section-title">M72 World Tour</h2>
-        <div class="table-container">
-            <table class="tour-table">
-                <thead>
-                    <tr>
-                        <th>Data</th>
-                        <th>Cidade / País</th>
-                        <th>Estádio</th>
-                        <th>Status</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>12 de Maio</td>
-                        <td>Munique, Alemanha</td>
-                        <td>Olympiastadion</td>
-                        <td><span class="badge badge-soldout">Esgotado</span></td>
-                    </tr>
-                    <tr>
-                        <td>14 de Junho</td>
-                        <td>Copenhague, Dinamarca</td>
-                        <td>Parken Stadium</td>
-                        <td><span class="badge badge-available">Ingressos</span></td>
-                    </tr>
-                    <tr>
-                        <td>02 de Agosto</td>
-                        <td>Foxborough, EUA</td>
-                        <td>Gillette Stadium</td>
-                        <td><span class="badge badge-soldout">Esgotado</span></td>
-                    </tr>
-                    <tr>
-                        <td>20 de Setembro</td>
-                        <td>Cidade do México, México</td>
-                        <td>Estadio GNP Seguros</td>
-                        <td><span class="badge badge-available">Últimos Lotes</span></td>
-                    </tr>
-                </tbody>
-            </table>
-        </div>
-    </section>
+    </main>
 
-    <section id="player" class="section player-section">
-        <h2 class="section-title">Metallica Audio Hub</h2>
-        <div class="player-box">
-            <div class="track-info">
-                <div class="disc-art">⚡</div>
-                <div>
-                    <h3 id="song-title">Master of Puppets</h3>
-                    <p id="song-album">Álbum: Master of Puppets (1986)</p>
-                </div>
-            </div>
-            <div class="player-controls">
-                <button class="btn-player">⏮</button>
-                <button class="btn-player btn-play">▶</button>
-                <button class="btn-player">⏭</button>
-            </div>
-            <div class="progress-bar-container">
-                <div class="progress-bar"></div>
-            </div>
-        </div>
-    </section>
-
-    <section id="club" class="section club-section">
-        <div class="club-content">
-            <h2>Junte-se ao Fifth Member</h2>
-            <p>Receba pré-vendas exclusivas, downloads de shows ao vivo e conteúdos dos bastidores diretamente no seu e-mail.</p>
-            <form class="club-form" onsubmit="event.preventDefault(); alert('Bem-vindo à família Metallica!');">
-                <input type="email" placeholder="Digite seu melhor e-mail..." required>
-                <button type="submit" class="btn btn-primary">Inscrever-se</button>
-            </form>
-        </div>
-    </section>
-
-    <footer class="footer">
-        <div class="footer-content">
-            <p>&copy; 2026 METALLICA FAN PROJECT // Feito para os verdadeiros fãs de Heavy Metal.</p>
-            <div class="socials">
-                <a href="#">Spotify</a>
-                <a href="#">YouTube</a>
-                <a href="#">Instagram</a>
-                <a href="#">Twitter/X</a>
-            </div>
-        </div>
-    </footer>
-
-</body>
+    </body>
 </html>
