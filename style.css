@@ -649,3 +649,112 @@ body {
         flex-direction: column;
     }
 }
+/* ==========================================================================
+   METALLICA FAN PORTAL - ESTILOS ADICIONAIS DA PARTE 2
+   Highlight Themes, Tribute Section & Advanced Sub-blocks
+   ========================================================================== */
+
+/* Espaçadores de sub-eras */
+.margin-top-large {
+    margin-top: 5rem;
+}
+
+.era-subblock {
+    position: relative;
+    padding-bottom: 2rem;
+    border-bottom: 1px dashed rgba(255, 204, 0, 0.1);
+}
+
+/* Temas de cores por Álbum */
+.highlight-gold {
+    border-color: rgba(255, 204, 0, 0.4) !important;
+}
+
+.highlight-red {
+    border-color: rgba(220, 38, 38, 0.5) !important;
+}
+
+.highlight-green {
+    border-color: rgba(16, 185, 129, 0.4) !important;
+}
+
+/* Placeholders de capas com fundos temáticos */
+.electric-theme {
+    background: linear-gradient(135deg, #051329 0%, #0a2540 100%) !important;
+    border-color: #2563eb !important;
+}
+
+.electric-theme h4 {
+    color: #60a5fa;
+}
+
+.puppets-theme {
+    background: linear-gradient(135deg, #2a0808 0%, #180505 100%) !important;
+    border-color: #dc2626 !important;
+}
+
+.puppets-theme h4 {
+    color: #f87171;
+}
+
+.justice-theme {
+    background: linear-gradient(135deg, #182218 0%, #091209 100%) !important;
+    border-color: #10b981 !important;
+}
+
+.justice-theme h4 {
+    color: #34d399;
+}
+
+/* Caixa de Tributo a Cliff Burton */
+.tribute-box {
+    background: linear-gradient(135deg, rgba(30, 10, 10, 0.9) 0%, rgba(15, 5, 5, 0.9) 100%);
+    border: 1px solid rgba(220, 38, 38, 0.3);
+    border-radius: 8px;
+    padding: 1.5rem;
+    margin-top: 2rem;
+    box-shadow: 0 0 20px rgba(220, 38, 38, 0.15);
+}
+
+.tribute-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 0.8rem;
+}
+
+.tribute-icon {
+    font-size: 1.5rem;
+}
+
+.tribute-header h4 {
+    font-family: var(--font-heading);
+    color: #fca5a5;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.tribute-box p {
+    font-style: italic;
+    color: #d1d5db;
+    font-size: 0.95rem;
+    margin-bottom: 0;
+}
+
+/* Animações e Hover de Tabelas */
+.track-table tbody tr {
+    cursor: default;
+}
+
+.track-table tbody tr:hover .track-title {
+    color: var(--color-gold-primary);
+    transition: var(--transition-fast);
+}
+
+/* Ajustes de Responsividade para Tabelas */
+@media (max-width: 850px) {
+    .track-table th:nth-child(4),
+    .track-table td:nth-child(4) {
+        display: none; /* Oculta compositores em telas pequenas para manter legibilidade */
+    }
+}
