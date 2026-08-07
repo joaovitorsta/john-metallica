@@ -906,3 +906,226 @@ body {
         grid-template-columns: 1fr;
     }
 }
+/* ==========================================================================
+   METALLICA FAN PORTAL - ESTILOS ADICIONAIS DA PARTE 4
+   Discography Hub, M72 Tour Table & Vault Section
+   ========================================================================== */
+
+/* 1. DISCOGRAFIA HUB */
+.discography-section {
+    padding: 5rem 0;
+    border-top: var(--border-subtle);
+}
+
+.discography-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.disco-card {
+    background: var(--color-bg-card);
+    border: var(--border-metal);
+    border-radius: 8px;
+    overflow: hidden;
+    transition: var(--transition-smooth);
+    display: flex;
+    flex-direction: column;
+}
+
+.disco-card:hover {
+    transform: translateY(-8px);
+    border-color: var(--color-gold-primary);
+    box-shadow: var(--shadow-glow-gold);
+}
+
+.disco-cover {
+    height: 180px;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    padding: 1rem;
+    background-size: cover;
+    background-position: center;
+}
+
+/* Backgrounds temáticos simulados para as capas */
+.cover-kill { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #6b1111; }
+.cover-ride { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #0d2850; }
+.cover-puppets { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #4a1515; }
+.cover-justice { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #1f3a22; }
+.cover-black { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #111111; }
+.cover-garage { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #3d3419; }
+.cover-sm { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #2a103c; }
+.cover-72s { background: linear-gradient(to top, rgba(0,0,0,0.9), transparent), #635800; }
+
+.disco-year {
+    font-family: var(--font-code);
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.disco-overlay {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.disco-badge {
+    background: rgba(0, 0, 0, 0.75);
+    border: 1px solid var(--color-gold-primary);
+    color: var(--color-gold-primary);
+    font-size: 0.65rem;
+    font-weight: 800;
+    padding: 0.25rem 0.6rem;
+    border-radius: 3px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.disco-info {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.disco-info h3 {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    color: #fff;
+    margin-bottom: 0.3rem;
+}
+
+.disco-meta {
+    font-size: 0.75rem;
+    color: var(--color-gold-primary);
+    font-weight: 600;
+    margin-bottom: 0.8rem;
+}
+
+.disco-desc {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    margin-bottom: 1.2rem;
+    line-height: 1.5;
+    flex-grow: 1;
+}
+
+.disco-tags {
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+}
+
+.disco-tags span {
+    background: var(--color-bg-elevated);
+    color: var(--color-text-muted);
+    font-size: 0.68rem;
+    padding: 0.2rem 0.5rem;
+    border-radius: 2px;
+    font-weight: 600;
+}
+
+/* 2. TURNÊ M72 WORLD TOUR */
+.tour-section {
+    padding: 5rem 0;
+    border-top: var(--border-subtle);
+}
+
+.tour-concept-card {
+    background: linear-gradient(135deg, rgba(255, 204, 0, 0.05) 0%, rgba(16, 16, 20, 0.95) 100%);
+    border: var(--border-metal);
+    border-radius: 8px;
+    padding: 2.5rem;
+    margin-bottom: 3.5rem;
+    position: relative;
+}
+
+.concept-badge {
+    color: var(--color-gold-primary);
+    font-size: 0.75rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    margin-bottom: 0.8rem;
+}
+
+.tour-concept-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    color: #fff;
+    margin-bottom: 1rem;
+}
+
+.tour-concept-card p {
+    color: var(--color-text-muted);
+    font-size: 1.05rem;
+    line-height: 1.7;
+}
+
+.status-pill {
+    background: rgba(255, 204, 0, 0.15);
+    color: var(--color-gold-primary);
+    border: 1px solid var(--color-gold-dim);
+    padding: 0.3rem 0.7rem;
+    border-radius: 50px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.status-pill.status-alt {
+    background: rgba(37, 99, 235, 0.15);
+    color: #60a5fa;
+    border-color: #2563eb;
+}
+
+/* 3. BAÚ DO METALLICA (THE VAULT) */
+.vault-section {
+    padding: 5rem 0;
+    border-top: var(--border-subtle);
+}
+
+.vault-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.vault-card {
+    background: var(--color-bg-card);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: var(--transition-smooth);
+}
+
+.vault-card:hover {
+    border-color: var(--color-gold-primary);
+    transform: translateY(-4px);
+    background: var(--color-bg-elevated);
+}
+
+.vault-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.vault-card h3 {
+    font-family: var(--font-heading);
+    font-size: 1.3rem;
+    color: #fff;
+    margin-bottom: 0.8rem;
+}
+
+.vault-card p {
+    color: var(--color-text-muted);
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+.vault-card strong {
+    color: var(--color-gold-primary);
+}
