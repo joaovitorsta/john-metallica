@@ -758,3 +758,151 @@ body {
         display: none; /* Oculta compositores em telas pequenas para manter legibilidade */
     }
 }
+/* ==========================================================================
+   METALLICA FAN PORTAL - ESTILOS ADICIONAIS DA PARTE 3
+   Black Album Theme, 72 Seasons Theme, Member Profile Cards & Gear Lists
+   ========================================================================== */
+
+/* Cores de Temas para Álbuns Recentes */
+.black-theme {
+    background: linear-gradient(135deg, #111111 0%, #000000 100%) !important;
+    border-color: #4b5563 !important;
+}
+
+.black-theme h4 {
+    color: #e5e7eb;
+}
+
+.yellow-theme {
+    background: linear-gradient(135deg, #2b2600 0%, #121000 100%) !important;
+    border-color: var(--color-gold-primary) !important;
+}
+
+.yellow-theme h4 {
+    color: var(--color-gold-primary);
+}
+
+.highlight-black {
+    border-color: rgba(255, 255, 255, 0.2) !important;
+}
+
+.highlight-yellow {
+    border-color: var(--color-gold-primary) !important;
+    box-shadow: 0 0 20px rgba(255, 204, 0, 0.15);
+}
+
+/* Seção de Membros - Grid & Layout */
+.members-section {
+    padding-top: 4rem;
+    padding-bottom: 6rem;
+    border-top: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.members-grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 2.5rem;
+    margin-top: 3rem;
+}
+
+.member-profile-card {
+    background: var(--color-bg-card);
+    border: var(--border-metal);
+    border-radius: 8px;
+    padding: 2rem;
+    transition: var(--transition-smooth);
+    box-shadow: var(--shadow-card);
+}
+
+.member-profile-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--color-gold-primary);
+    box-shadow: var(--shadow-glow-gold);
+}
+
+.member-card-header {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: var(--border-subtle);
+    margin-bottom: 1.5rem;
+}
+
+.member-avatar-box {
+    width: 65px;
+    height: 65px;
+    background: var(--color-bg-elevated);
+    border: 1px solid var(--color-gold-dim);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.member-title-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.member-role {
+    display: block;
+    color: var(--color-gold-primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 2px;
+}
+
+.member-bio {
+    color: var(--color-text-muted);
+    font-size: 0.95rem;
+    margin-bottom: 1.8rem;
+    line-height: 1.6;
+}
+
+/* Bloco de Equipamentos Técnicos */
+.gear-spec-box {
+    background: var(--color-bg-surface);
+    border: 1px solid rgba(255, 255, 255, 0.05);
+    border-radius: 6px;
+    padding: 1.2rem;
+}
+
+.gear-spec-box h4 {
+    font-size: 0.85rem;
+    color: var(--color-gold-primary);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.8rem;
+}
+
+.gear-list {
+    list-style: none;
+}
+
+.gear-list li {
+    font-size: 0.85rem;
+    color: var(--color-text-muted);
+    padding: 0.35rem 0;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.03);
+}
+
+.gear-list li:last-child {
+    border-bottom: none;
+}
+
+.gear-list strong {
+    color: #fff;
+}
+
+/* Responsividade dos Membros */
+@media (max-width: 600px) {
+    .members-grid-container {
+        grid-template-columns: 1fr;
+    }
+}
